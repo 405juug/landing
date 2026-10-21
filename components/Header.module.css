@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.nav{
+    display: flex;
+    gap: 32px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--black);
+}
+
+.nav a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.active{
+    font-weight: 700;
+}
+
+@media (max-width: 768px){
+    .nav{
+        gap: 16px;
+        font-size: 13px;
+    }
+    .nav a:not(.active){
+        display: none;
+    }
+}
